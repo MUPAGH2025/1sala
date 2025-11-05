@@ -9,7 +9,7 @@ jobs:
       - run: sudo apt-get install texlive-xetex inkscape pandoc
       - run: pip install nbconvert ipykernel
       - run: python -m ipykernel install --user --name=python3
-      - run: python -m nbconvert --to pdf --execute Test.ipynb --ExecutePreprocessor.kernel_name=python3
+      - run: python -m nbconvert --to pdf --execute UPWIND.ipynb --ExecutePreprocessor.kernel_name=python3
       - uses: actions/upload-artifact@v4
         with:
-          path: Test.pdf
+          path: Test.pdf anim.gif
