@@ -12,4 +12,4 @@ jobs:
       - run: python -m nbconvert --to pdf --execute UPWIND.ipynb --ExecutePreprocessor.kernel_name=python3
       - uses: actions/upload-artifact@v4
         with:
-          path: Test.pdf anim.gif
+          path: anim.gif
