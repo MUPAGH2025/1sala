@@ -12,4 +12,4 @@ jobs:
       - run: python -m nbconvert --to pdf --execute Projekt.ipynb --ExecutePreprocessor.kernel_name=python3
       - uses: actions/upload-artifact@v4
         with:
-          path: Sprawozdanie.pdf
+          path: Projekt.pdf
